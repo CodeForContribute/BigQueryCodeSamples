@@ -21,7 +21,7 @@ public class runGetTable {
             Table table = bigQuery.getTable(tableId);
             System.out.println("Table info:" + table.getDescription());
         }catch (BigQueryException e){
-            System.out.println("Table info not retrieved.\n"+e.toString());
+            System.out.println(" Table info  not  retrieved.\n"+e.toString());
         }
     }
 }
