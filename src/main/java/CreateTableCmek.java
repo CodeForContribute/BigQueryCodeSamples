@@ -34,10 +34,10 @@ public class CreateTableCmek {
                                     setEncryptionConfiguration(encryption).
                                     build();
             bigQuery.create(tableInfo);
-            System.out.println("Table CMEK create Successfully !!");
+            System.out.println("Table cmek create Successfully !!");
 
         }catch (BigQueryException e){
-            System.out.println("Table CMEK was not created.\n" + e.toString());
+            System.out.println("Table cmek was not created.\n" + e.toString());
         }
     }
 }
